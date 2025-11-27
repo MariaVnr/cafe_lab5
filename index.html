@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Кафе Floral Hug</title>
+    <link rel="stylesheet" href="css/style-grid.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+    <body>
+        <div class="container">
+            <div id="title" class="title js-dblclick-target">
+                    <h1>Floral Hug 🌸</h1>
+                    <div class="slogan1">Смак, що об'єднує 🍨</div>
+            </div>
+
+            <section id="about_us" class="js-dblclick-target">
+                <p>
+                Ласкаво просимо до кафе <strong><em>Floral Hug</em></strong>! Ми створили затишне місце, де кожен ковток кави та кожен шматочок десерту дарує насолоду.
+                </p>
+                <h3>Наша сім'я:</h3>
+                <div class="team">
+                    <div class="team-info"><h4>Христина</h4>
+                        <p><em> Закохана у каву та завжди готова порадувати вас новими смаковими поєднаннями.</em></p>
+                    </div>
+                    <div class="team-photo">
+                        <img src="images/Христина.jpg" alt="Христина" usemap="#baristamap" height="130px">
+                        <map name = baristamap>
+                            <area shape="rect" coords="0 0 65 130" alt="chef" href="baristainfo.html">
+                        </map>
+                    </div>
+                </div>
+                <div class="team">
+                    <div class="team-info"><h4>Денис</h4>
+                        <p><em>Створює смачні десерти та страви, надихаючись натуральними інгредієнтами.</em></p>
+                    </div>
+                    <div class="team-photo">
+                        <img src="images/Денис.jpg" alt="Денис" usemap="#chefmap" height="130px">
+                        <map name = chefmap>
+                            <area shape="rect" coords="0 0 65 130" alt="chef" href="chefinfo.html">
+                        </map>
+                    </div>
+                </div>
+                <div class="team">
+                    <div class="team-info"><h4>Карина</h4>
+                        <p><em> Дбає про затишок у кафе та вашу приємну атмосферу під час візиту.</em></p>
+                    </div>
+                    <div class="team-photo">
+                        <img src="images/Карина.jpg" alt="Карина"  usemap="#managermap" height="130px">
+                        <map name = managermap>
+                            <area shape="rect" coords="0 0 65 130" alt="chef" href="managerinfo.html">
+                        </map>
+                    </div>
+                </div>
+            </section>
+
+            <section id="menu" class="js-dblclick-target">
+                <div class="menu-category">
+                    <h3>Кава</h3>
+                    <ul>
+                        <li><span>Еспресо (50 мл)</span> <span class="price">40 грн</span></li>
+                        <li><span>Американо (150 мл)</span> <span class="price">55 грн</span></li>
+                        <li><span>Лате (200 мл)</span> <span class="price">60 грн</span></li>
+                        <li><span>Капучино (200 мл)</span> <span class="price">55 грн</span></li>
+                        <li><span>Гарячий шоколад з вершками</span> <span class="price">60 грн</span></li>
+                    </ul>
+                </div>
+
+                <div class="menu-category">
+                    <h3>Чай</h3>
+                    <ul>
+                        <li><span>Чорний чай</span> <span class="price">100 грн</span></li>
+                        <li><span>Зелений чай</span> <span class="price">95 грн</span></li>
+                        <li><span>Трав’яний чай</span> <span class="price">70 грн</span></li>
+                        <li><span>Фруктовий чай</span> <span class="price">85 грн</span></li>
+                    </ul>
+                </div>
+
+                <div class="menu-category">
+                    <h3>Спеціальні напої</h3>
+                    <ul>
+                        <li><span>Матча латте (200 мл)</span> <span class="price">150 грн</span></li>
+                        <li><span>Какао з маршмеллоу</span> <span class="price">110 грн</span></li>
+                        <li><span>Імбирний чай з медом</span> <span class="price">135 грн</span></li>
+                    </ul>
+                </div>
+
+                <div id="min-count-task">
+                    <h3>Завдання: Кількість мінімальних чисел</h3>
+                    <form id="numberForm" class="initial-display-grid" >
+                        <input type="number" class="num-input" name="num1" value="5" required>
+                        <input type="number" class="num-input" name="num2" value="2" required>
+                        <input type="number" class="num-input" name="num3" value="8" required>
+                        <input type="number" class="num-input" name="num4" value="2" required>
+                        <input type="number" class="num-input" name="num5" value="1" required>
+                        <input type="number" class="num-input" name="num6" value="10" required>
+                        <input type="number" class="num-input" name="num7" value="1" required>
+                        <input type="number" class="num-input" name="num8" value="6" required>
+                        <input type="number" class="num-input" name="num9" value="2" required>
+                        <input type="number" class="num-input" name="num10" value="1" required>
+                        
+                        <button type="submit" id="calculateMinBtn">
+                            Визначити кількість
+                        </button>
+                    </form>
+                </div>
+                
+            </section>
+                
+            <nav id="page_menu" class="js-dblclick-target">
+                <h2>Меню:</h2>
+                <ol>
+                    <li><a href="index.html">Гарячі напої</a></li>
+                    <li><a href="soft_drinks.html">Холодні напої</a></li>
+                    <li><a href="desserts.html">Десерти</a></li>
+                    <li><a href="main_courses.html">Гарячі страви</a></li>
+                    <li><a href="snack.html">Закуски</a></li>
+                </ol>
+            </nav>
+
+            <div id="contacts" class="js-dblclick-target">
+                    <h2>📞 Контакти</h2>
+                    <p>📱 <b>Телефон:</b> +380 95 783 2394</p>
+                    <p>📍 <b>Адреса:</b> вул. Велика Васильківська, 62а</p>
+                    <p>💻 <b>Режим роботи:</b> 8:00 – 20:00</p>
+                    <div class="map-btn">
+                        <a href="https://www.google.com/maps?q=вул.+Велика+Васильківська,+62а" target="_blank">📍 Відкрити в Google Maps</a>
+                    </div>
+            </div>
+
+            <figure id="gallery" class="js-dblclick-target">
+                <div class="slogan2">Тут починається твій ранок ☕</div>
+                <div class="gallery_block">
+                    <img src="images/вхід.jpg" alt="Головний вхід">
+                    <img src="images/Стійка.jpg" alt="Тут обробляються ваші замовлення">
+                    <img src="images/Галерея1.jpg" alt="Декорації">
+                    <img src="images/Зал.jpg" alt="Зони відпочинку">
+                    <img src="images/Зал2.jpg" alt="Зони відпочинку">
+                    <img src="images/Зал3.jpg" alt="Зони відпочинку">
+                </div>
+            </figure>
+        </div>
+        
+        <script src="js/script.js"></script> 
+        
+    </body>
+</html>

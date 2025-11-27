@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 'Navbar Navbar Navbar'
+                        'sidebar main sidebar_right_top'
+                        'sidebar main sidebar_right_bottom'
+                        'sidebar footer footer';
+                        grid-template-columns: 0.5fr 1.8fr 0.7fr;
+                        grid-template-rows: auto;
+                        grid-auto-rows: auto;
+                        min-height: 100vh;
+}
+
+#title {
+    grid-area: Navbar;
+    background: linear-gradient( to right, #8FBC8F, #558355);
+    font-family: Cursive;
+    text-align: center;
+    display: grid;
+    justify-items: center; 
+}
+
+#title h1 {
+    color: white;
+    font-size: clamp(24px, 5vw, 50px);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2; 
+    max-width: 90%; 
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.slogan1 {
+    justify-self: start; 
+    width: 205px;
+    height: 27px;
+    border: 1px solid black;
+    font-size: 18px;
+    background-color: #FDF5E6;
+    color: #852648;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#about_us {
+    grid-area: sidebar;
+    background: linear-gradient( to bottom, #F3D0C3, #795663);
+    padding: 10px 10px 0 10px;
+}
+
+#about_us h4{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#about_us h3{
+    margin: 15px;
+
+}
+
+#about_us p{
+    text-indent: 10px;
+    font-size: 15px;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: auto auto; 
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #FDF5E6;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.team-info {
+    padding-right: 20px;
+}
+.team-photo {
+    float: right; 
+    width: 30%;
+}
+.team-photo img {
+    width: 65px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50px;
+}
+
+#menu {
+    grid-area: main;
+    text-align: center;
+    background-color: #FDF5E6;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Cursive;
+}
+
+.menu-category {
+    margin-bottom: 5px;
+}
+.menu-category h3 {
+    margin: 5px;
+    font-size: 17px;
+}
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+
+}
+.menu-category li {
+    display: grid;
+    grid-template-columns: auto auto; 
+    align-items: center; 
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #8F4A2B;
+}
+
+
+#page_menu{
+    grid-area: sidebar_right_top;
+    background-color: #F3D0C3;
+}
+
+#page_menu h2{
+    text-align: center;
+    font-family: Cursive;
+    font-size: 25px;
+    color: #795663;
+}
+#page_menu ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#page_menu li {
+    margin-bottom: 12px;
+}
+
+#page_menu a {
+    margin-top: 4px;
+    display: block;
+    padding: 8px;
+    background-color: #F3D0C3;
+    color: #795663;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#page_menu a:hover {
+    background-color: #8FBC8F;
+    color: white;
+}
+
+#contacts{
+    grid-area: sidebar_right_bottom;
+    background-color: #795663;
+    padding-left: 20px;
+    color: #D9BCAF;
+}
+
+#contacts h2 {
+    font-size: 21px;
+    text-align: center;
+    color: #D9BCAF;
+    margin-bottom: 10px;
+}
+
+#contacts p {
+    margin: 10px;
+    font-size: 14px;
+}
+
+#contacts a {
+    color: #D9BCAF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contacts a:hover {
+    text-decoration: underline;
+}
+
+.map-btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.map-btn a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ba7878;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.map-btn a:hover {
+    background: #99354f;
+}
+
+#gallery{
+    grid-area: footer;
+    background-color: #283D3B;
+    margin: 0;
+    display: grid; 
+}
+
+.gallery_block{
+    text-align: center;
+}
+
+#gallery img{
+    width: 15%;
+    margin: 5px; 
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    
+}
+
+#gallery img:hover {
+    transform: scale(1.1); 
+    cursor: pointer; 
+}
+
+.slogan2 {
+    border: 1px solid black;
+    background-color: #8a9688;
+    color: #FDF5E6;
+    font-size: 18px;
+    height: 30px;
+    font-family: Cursive;
+    text-align: center;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-areas: 
+            'Navbar'
+            'sidebar'
+            'main'
+            'sidebar_right_top'
+            'sidebar_right_bottom'
+            'footer';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .title h1 {
+        font-size: clamp(32px, 4vw, 48px);
+    }
+
+    .slogan1 {
+        width: auto;
+        max-width: 90%;
+        height: auto;
+        padding: 5px 10px;
+        font-size: 13px;
+        margin: 10px auto 5px 5px;
+        justify-self: center;
+        margin-left: 5px;
+
+    }
+
+    #about_us {
+        padding: 15px;
+    }
+
+    .team {
+        grid-template-columns: 1fr auto;
+        text-align: left;
+        padding: 5px;
+        margin-bottom: 6px;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    .team-info {
+        padding-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .team-info h3 {
+        font-size: 13px;
+        margin: 3px 0;
+    }
+
+    .team-info p {
+        font-size: 11px;
+        margin: 3px 5px;
+    }
+
+    .team-photo {
+        float: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu {
+        padding: 15px;
+    }
+
+    .menu-category li {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        text-align: left;
+    }
+    
+    .price {
+        text-align: right;
+    }
+
+    #page_menu {
+        padding: 15px;
+    }
+
+    #page_menu h2 {
+        font-size: 20px;
+    }
+
+    #contacts {
+        padding: 15px;
+    }
+
+    #gallery img {
+        width: 45%;
+        height: 120px;
+        margin: 3px;
+    }
+
+    .slogan2 {
+        width: 80%;
+        max-width: 230px;
+        margin: 3px auto 5px 5px;
+        font-size: 13px;
+        height: auto;
+        padding: 5px;
+    }
+}
